@@ -40,4 +40,4 @@ cd sniffer-python```
 Como o script acessa a placa de rede em modo promíscuo, 
 ```
 use:SistemaComandoLinux/macOSsudo python3 main.py
-Windowspython main.py (Rodar como Admin)```
+Windowspython main.py (Rodar como Admin)
