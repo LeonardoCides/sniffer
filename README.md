@@ -26,3 +26,18 @@ Para garantir a "beleza" e funcionalidade, o projeto utiliza:
 
 ```bash
 pip install scapy rich colorama
+```
+
+## 🚀 Como Executar
+**Siga os passos abaixo para rodar o sniffer em sua máquina:**
+
+1. Clonar o Repositório
+```Bash
+git clone [https://github.com/seu-usuario/sniffer-python.git](https://github.com/seu-usuario/sniffer-python.git)
+cd sniffer-python```
+```
+**2. Execução (Requer Privilégios)**
+Como o script acessa a placa de rede em modo promíscuo, 
+```
+use:SistemaComandoLinux/macOSsudo python3 main.py
+Windowspython main.py (Rodar como Admin)```
