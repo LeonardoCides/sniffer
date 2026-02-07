@@ -1,17 +1,28 @@
-🕵️ NETWORK SNIFFER PRO<p align="center"><b>Uma ferramenta minimalista e poderosa para análise de tráfego em tempo real.</b></p>🎨 Estética do ProjetoPara garantir que a interface do usuário (CLI) também seja bonita, este script utiliza sequências de escape ANSI para cores.[!TIP]Use bibliotecas como colorama ou rich no seu código Python para obter resultados profissionais como os do exemplo abaixo.🛠️ Instalação e SetupBash# Clone o projeto
-git clone https://github.com/usuario/sniffer-python.git
+# 🔍 Network Sniffer Python Edition
+> **Captura e análise de pacotes com interface otimizada.**
 
-# Entre na pasta
-cd sniffer-python
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Network-Security-red?style=for-the-badge&logo=linux&logoColor=white" alt="Security">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
+</p>
 
-# Instale as dependências (caso use Scapy)
-pip install scapy colorama
-⌨️ Exemplo de Visualização no TerminalAbaixo, um exemplo de como o código formata a saída para facilitar a leitura:ProtocoloOrigemDestinoInfoTCP192.168.0.101.1.1.1HTTPS (443)UDP192.168.0.158.8.8.8DNS QueryICMP10.0.0.510.0.0.1Echo Request🛡️ Requisitos de SegurançaEste script exige permissões de Superusuário para acessar os sockets brutos (raw sockets).Python# Exemplo de como checar privilégios no seu código:
-import os
-import sys
+---
 
-if not os.geteuid() == 0:
-    print("\n[!] Erro: Execute como SUDO/ADMIN.\n")
-    sys.exit()
+## 📖 Sobre o Projeto
+Este é um sniffer de rede desenvolvido para fornecer uma visão clara e colorida do tráfego de dados. Ao contrário de sniffers comuns que cospem texto bruto, este script organiza as informações em **camadas legíveis**.
 
-print(f"{Cores.BOLD}{Cores.BLUE}[*] Iniciando Sniffer...{Cores.ENDC}")
+### ✨ Diferenciais
+* 🎨 **Interface Colorida:** Identificação visual rápida de protocolos (TCP em verde, UDP em azul, etc).
+* 📊 **Detalhamento de Camadas:** Decompõe desde o Frame Ethernet até o Payload.
+* 🚀 **Performance:** Utiliza Raw Sockets para máxima eficiência.
+
+---
+
+## 🛠️ Tecnologias e Dependências
+Para garantir a "beleza" e funcionalidade, o projeto utiliza:
+* **Scapy/Socket:** Para a manipulação de pacotes.
+* **Rich / Colorama:** Para renderizar textos formatados e tabelas no terminal.
+
+```bash
+pip install scapy rich colorama
